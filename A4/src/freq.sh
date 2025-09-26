@@ -1,9 +1,9 @@
+#!/bin/bash
+
 input_file="/home/dmy/A4/data/clean_dialog.csv"
 output_file="/home/dmy/A4/data/Line_percentage.csv"
 total_lines=36859
 names=("Fluttershy" "Twilight Sparkle" "Rarity" "Pinkie Pie" "Rainbow Dash")
-
-
 
 # Extract the 3rd CSV column (pony) safely; requires grep -P
 # before the tail | grep ... pipeline
@@ -24,4 +24,3 @@ for name in "${names[@]}"; do
 done
 
 echo "Wrote $output_file"
-
